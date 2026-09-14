@@ -32,13 +32,14 @@
             <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
 
             <nav id="menu">
-                <a href="#inicio">Inicio</a>
-                <a href="#nosotros">Nosotros</a>
-                <a href="#servicios">Servicios</a>
-                <a href="#proyectos">Proyectos</a>
-                <a href="#contacto">Contacto</a>
-                <a href="#contacto" class="btn btn-small">Cotiza tu proyecto</a>
-            </nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#expedientes">Expedientes</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#contacto" class="btn btn-small">Cotiza tu proyecto</a>
+</nav>
         </div>
     </header>
 
@@ -124,6 +125,73 @@
                 </div>
             </div>
         </section>
+
+        <!-- SERVICIO ESPECIAL: EXPEDIENTES PARA LETREROS -->
+<section id="expedientes" class="section expedientes">
+    <div class="container expedientes-grid">
+
+        <div class="expedientes-content">
+            <p class="section-label">SERVICIO ESPECIALIZADO</p>
+
+            <h2>
+                Expedientes para<br>
+                <span>letreros luminosos e iluminados</span>
+            </h2>
+
+            <p class="expedientes-intro">
+                Elaboramos expedientes técnicos completos para la
+                instalación y aprobación de letreros luminosos e
+                iluminados, cumpliendo con los requisitos técnicos
+                y normativos correspondientes.
+            </p>
+
+            <div class="expedientes-list">
+
+                <div class="expediente-item">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                    <span>Diseño de publicidad exterior</span>
+                </div>
+
+                <div class="expediente-item">
+                    <i class="fa-solid fa-image"></i>
+                    <span>Fotomontajes realistas</span>
+                </div>
+
+                <div class="expediente-item">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <span>Memoria descriptiva</span>
+                </div>
+
+                <div class="expediente-item">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <span>Especificaciones técnicas</span>
+                </div>
+
+                <div class="expediente-item">
+                    <i class="fa-solid fa-drafting-compass"></i>
+                    <span>Planos de arquitectura y estructuras</span>
+                </div>
+
+                <div class="expediente-item">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Diseño eléctrico</span>
+                </div>
+
+            </div>
+
+            <a href="#contacto" class="btn">
+                Solicitar información
+            </a>
+        </div>
+
+        <div class="expedientes-image">
+            <img 
+                src="img/expedientes-letreros.jpg" 
+                alt="Elaboración de expedientes para letreros luminosos e iluminados">
+        </div>
+
+    </div>
+</section>
 
         <!-- ================= PROYECTOS ================= -->
         <section id="proyectos" class="section projects">
@@ -252,18 +320,21 @@
                     </div>
                 </div>
 
-                <form id="contactForm" class="contact-form">
-                    <input type="text" placeholder="Nombre completo" required>
-                    <input type="email" placeholder="Correo electrónico" required>
-                    <input type="tel" placeholder="Teléfono">
-                    <select>
+                <form id="contactForm" class="contact-form" action="ulises@puentesarr.in" method="POST">
+                    <input type="hidden" name="_subject" value="Nueva consulta desde la web de CALPARA S.A.C.">
+                    <input type="hidden" name="_captcha" value="true">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="text" name="nombre" placeholder="Nombre completo" required>
+                    <input type="email" name="correo" placeholder="Correo electrónico" required>
+                    <input type="tel" name="telefono" placeholder="Teléfono">
+                    <select name="servicio">
                         <option value="">Selecciona un servicio</option>
                         <option>Arquitectura</option>
                         <option>Construcción</option>
                         <option>Remodelación</option>
                         <option>Supervisión</option>
                     </select>
-                    <textarea rows="5" placeholder="Cuéntanos sobre tu proyecto" required></textarea>
+                    <textarea name="mensaje" rows="5" placeholder="Cuéntanos sobre tu proyecto" required></textarea>
                     <button type="submit" class="btn">Enviar consulta</button>
                     <p id="formMessage" class="form-message"></p>
                 </form>
@@ -331,7 +402,7 @@
         </div>
     </footer>
 
-    <a class="wa" href="https://wa.me/51987654321" target="_blank">
+    <a class="wa" href="https://wa.me/51924565175?text=Hola%2C%20vengo%20de%20la%20web%20de%20Calpara%20S.A.C.%20Me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank">
     <i class="fa-brands fa-whatsapp"></i>
 </a>
 
