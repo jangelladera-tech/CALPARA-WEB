@@ -725,4 +725,109 @@ nav a:hover {
     .experience {
         left: 10px;
     }
+
+    .expedientes-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .expedientes-content h2 {
+        font-size: 32px;
+    }
+
+    .expedientes-list {
+        grid-template-columns: 1fr;
+    }
+
+    .expedientes-image {
+        order: -1;
+    }
+
+}
+
+/* ==========================================
+   EXPEDIENTES PARA LETREROS
+   ========================================== */
+
+.expedientes {
+    background: #f5f5f5;
+}
+
+.expedientes-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.expedientes-content {
+    max-width: 580px;
+}
+
+.expedientes-content h2 {
+    font-size: 42px;
+    line-height: 1.15;
+    margin: 15px 0 25px;
+    color: #111a1d;
+}
+
+.expedientes-content h2 span {
+    color: #f28a16;
+}
+
+.expedientes-intro {
+    color: #5f686b;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.expedientes-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.expediente-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    background: white;
+    border-left: 3px solid #f28a16;
+    transition: .3s ease;
+}
+
+.expediente-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.expediente-item i {
+    color: #f28a16;
+    font-size: 18px;
+    min-width: 20px;
+}
+
+.expediente-item span {
+    color: #333;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.expedientes-image {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.expedientes-image img {
+    width: 100%;
+    display: block;
+    transition: .5s ease;
+}
+
+.expedientes-image:hover img {
+    transform: scale(1.03);
 }
