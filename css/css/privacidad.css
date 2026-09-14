@@ -1,0 +1,119 @@
+/* ================= POLÍTICA DE PRIVACIDAD ================= */
+
+.privacy-header {
+    position: relative;
+    background: #111a1d;
+}
+
+.privacy-nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.privacy-nav a:not(.btn) {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.privacy-main {
+    background: #f5f6f6;
+}
+
+.privacy-hero {
+    background: #111a1d;
+    color: white;
+    padding: 95px 0 70px;
+}
+
+.privacy-hero h1 {
+    font-size: clamp(40px, 6vw, 64px);
+    line-height: 1.05;
+    margin: 12px 0 18px;
+}
+
+.privacy-hero p:last-child {
+    max-width: 720px;
+    color: #aeb7b9;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.privacy-content {
+    padding: 70px 0;
+}
+
+.privacy-card {
+    max-width: 900px;
+    background: white;
+    padding: 55px 65px;
+    box-shadow: 0 10px 35px rgba(0,0,0,.08);
+    border-radius: 20px;
+}
+
+.privacy-date {
+    color: #778083;
+    font-size: 13px;
+    margin-bottom: 40px;
+}
+
+.privacy-card h2 {
+    color: #111a1d;
+    font-size: 19px;
+    margin: 32px 0 12px;
+}
+
+.privacy-card p,
+.privacy-card li {
+    color: #596366;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.privacy-card ul {
+    padding-left: 22px;
+    margin-bottom: 18px;
+}
+
+.privacy-card li {
+    margin-bottom: 7px;
+}
+
+.privacy-contact {
+    border-left: 3px solid #f28a16;
+    padding-left: 18px;
+    margin: 20px 0 35px;
+}
+
+.privacy-contact p {
+    margin: 7px 0;
+}
+
+.privacy-back {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+    .privacy-nav {
+        gap: 12px;
+    }
+
+    .privacy-nav a:not(.btn) {
+        display: none;
+    }
+
+    .privacy-hero {
+        padding: 75px 0 55px;
+    }
+
+    .privacy-content {
+        padding: 40px 0;
+    }
+
+    .privacy-card {
+        padding: 35px 25px;
+        border-radius: 14px;
+    }
+}
